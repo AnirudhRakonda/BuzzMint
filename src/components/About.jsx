@@ -51,7 +51,7 @@ const About = () => {
         {/* Mobile Version */}
         <section
           id="about-mobile"
-          className="relative min-h-[80vh] px-6 mb-12 pt-12 pb-24 md:hidden bg-black text-white"
+          className="relative min-h-[80vh] px-6 mb-12 pt-12 pb-24 md:hidden "
         >
           {/* Text Content - Left aligned */}
         <div className="relative z-10 w-full text-left">
