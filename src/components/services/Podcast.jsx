@@ -4,7 +4,7 @@ import { FaCircle } from 'react-icons/fa';
 
 const Podcast = () => (
   <div className="font-inter">
-    <h4 className="text-2xl font-semibold mb-2 text-heading">
+    <h4 className="text-2xl font-medium mb-2 text-heading">
       Every Story Has a Learning Worth Listening To
     </h4>
     <p className="text-base text-text mb-6 max-w-2xl">

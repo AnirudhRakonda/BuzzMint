@@ -4,7 +4,7 @@ import { FaCircle } from 'react-icons/fa';
 
 const Hiring = () => (
   <div className="font-inter">
-    <h4 className="text-2xl font-semibold mb-2 text-heading">
+    <h4 className="text-2xl font-medium mb-2 text-heading">
       Find Talent That Fits – Fast
     </h4>
     <p className="text-base text-text mb-6 max-w-2xl">

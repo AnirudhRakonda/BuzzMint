@@ -33,7 +33,7 @@ const Phase = ({ title, points }) => {
 
 const Research = () => (
   <div className="font-inter">
-    <h4 className="text-2xl font-semibold mb-2 font-inter">
+    <h4 className="text-2xl font-medium mb-2 font-inter">
       From Idea to Execution – Backed by Research
     </h4>
     <p className="text-base text-text mb-6 max-w-2xl">

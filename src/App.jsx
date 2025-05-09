@@ -5,7 +5,7 @@ import About from './components/About';
 import Services from "./components/services/Services";
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
-
+import Contact from './components/Contact';
 function App() {
   return (
     <>
@@ -15,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Services />
+      <Contact/>
     </div>
       <Footer />
       <Copyright/>
