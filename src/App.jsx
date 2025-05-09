@@ -15,9 +15,8 @@ function App() {
       <Home />
       <About />
       <Services />
-      
     </div>
-    <Footer />
+      <Footer />
       <Copyright/>
     </>
   );

@@ -1,20 +1,33 @@
+// src/components/WebDevelopment.jsx
 import React from 'react';
+import { FaCircle } from 'react-icons/fa';
 
 const WebDevelopment = () => (
-  <div>
-    <h4 className="text-xl font-semibold mb-1">Visibility + Conversion = Growth</h4>
-    <p className="text-sm text-gray-700 mb-4 max-w-2xl">
+  <div className="font-inter">
+    <h4 className="text-2xl font-semibold mb-2 text-heading">
+      Visibility + Conversion = Growth
+    </h4>
+    <p className="text-base text-text mb-6 max-w-2xl">
       From discovery to conversion, we build your digital ecosystem with precision and creativity.
     </p>
-    <ul className="list-disc pl-6 text-sm">
-      <li>Search Engine Optimization (SEO)</li>
-      <li>Search & Display Advertising (SEM)</li>
-      <li>Social Media Marketing & Optimization (SMM/SMO)</li>
-      <li>LinkedIn & YouTube Channel Growth</li>
-      <li>Google My Business (GMB) Optimization</li>
-      <li>Custom Website Design & Development</li>
-      <li>Lead Generation & E-commerce Websites</li>
-      <li>Responsive & Mobile Optimization</li>
+    <ul className="mt-2">
+      {[
+        'Search Engine Optimization (SEO)',
+        'Search & Display Advertising (SEM)',
+        'Social Media Marketing & Optimization (SMM/SMO)',
+        'LinkedIn & YouTube Channel Growth',
+        'Google My Business (GMB) Optimization',
+        'Custom Website Design & Development',
+        'Lead Generation & E-commerce Websites',
+        'Responsive & Mobile Optimization',
+      ].map((item, idx) => (
+        <li key={idx} className="flex items-start mb-3 text-base">
+          <span className="mt-1 mr-3 text-mint">
+            <FaCircle />
+          </span>
+          <span>{item}</span>
+        </li>
+      ))}
     </ul>
   </div>
 );

@@ -1,3 +1,4 @@
+// src/components/Services.jsx
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
@@ -10,31 +11,42 @@ const ServiceItem = ({ title, subtitle, Component, number }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg p-6 mb-6 shadow-md">
+    <div className="bg-service font-inter rounded-lg px-6 py-6 mb-6 shadow-md w-full transition-all duration-300 ease-in-out">
       <div
         className="flex justify-between items-center cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <div>
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-3xl md:text-4xl font-semibold text-heading">
             {number}. {title}
           </h3>
-          <p className="text-sm text-gray-600">{subtitle}</p>
+          <p className="text-lg text-text mt-2">
+            {subtitle}
+          </p>
         </div>
-        <div className="text-gray-600">
+        <div className="text-text text-2xl">
           {isOpen ? <FaChevronUp /> : <FaChevronDown />}
         </div>
       </div>
-      {isOpen && <div className="mt-4"><Component /></div>}
+      {isOpen && (
+        <div className="mt-6 text-base text-text transition-all duration-300">
+          <Component />
+        </div>
+      )}
     </div>
   );
 };
 
 const Services = () => {
   return (
-    <section id="services" className="bg-gray-100 py-16 px-6">
-      <h2 className="text-4xl font-playfair font-bold mb-10">Services and Divisions</h2>
-      <div className="max-w-5xl mx-auto">
+    <section
+      id="services"
+      className="w-full py-20 px-6 md:px-12 bg-bg text-text font-inter"
+    >
+      <h2 className="text-5xl md:text-6xl font-bold mb-12 text-left text-heading">
+        Services and Divisions
+      </h2>
+      <div className="flex flex-col gap-8">
         <ServiceItem
           number="1"
           title="Market Research & Strategy Division"
