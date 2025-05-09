@@ -10,31 +10,31 @@ import Hiring from './Hiring';
 const ServiceItem = ({ title, subtitle, Component, number }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div className="bg-service font-inter rounded-lg px-6 py-6 mb-6 shadow-md w-full transition-all duration-300 ease-in-out">
-      <div
-        className="flex justify-between items-center cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div>
-          <h3 className="text-3xl md:text-4xl font-semibold text-heading">
-            {number}. {title}
-          </h3>
-          <p className="text-lg text-text mt-2">
-            {subtitle}
-          </p>
+return (
+    <div className="bg-service font-inter rounded-lg px-6 py-6 mb-6 w-full transition-all duration-300 ease-in-out">
+        <div
+            className="flex justify-between items-center cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+        >
+            <div>
+                <h3 className="text-3xl md:text-4xl font-semibold text-heading">
+                    {number}. {title}
+                </h3>
+                <h4 className={`text-xl mt-2 mb-2 text-text ${isOpen ? 'hidden' : ''}`}>
+                    {subtitle}
+                </h4>
+            </div>
+            <div className="text-text text-2xl">
+                {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
         </div>
-        <div className="text-text text-2xl">
-          {isOpen ? <FaChevronUp /> : <FaChevronDown />}
-        </div>
-      </div>
-      {isOpen && (
-        <div className="mt-6 text-base text-text transition-all duration-300">
-          <Component />
-        </div>
-      )}
+        {isOpen && (
+            <div className="mt-6 text-base text-text transition-all duration-300">
+                <Component />
+            </div>
+        )}
     </div>
-  );
+);
 };
 
 const Services = () => {
@@ -43,7 +43,7 @@ const Services = () => {
       id="services"
       className="w-full py-20 px-6 md:px-12 bg-bg text-text font-inter"
     >
-      <h2 className="text-5xl md:text-6xl font-bold mb-12 text-left text-heading">
+      <h2 className="text-5xl md:text-6xl font-bold mb-12 text-left font-playfair text-heading">
         Services and Divisions
       </h2>
       <div className="flex flex-col gap-8">

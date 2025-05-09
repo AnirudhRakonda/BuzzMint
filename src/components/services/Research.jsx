@@ -10,7 +10,7 @@ const Phase = ({ title, points }) => {
         className="flex justify-between items-center cursor-pointer"
         onClick={() => setOpen(!open)}
       >
-        <h4 className="text-xl md:text-2xl font-semibold font-inter text-heading">
+        <h4 className="text-2xl mr-3 md:text-xl font-semibold font-inter text-heading">
           {title}
         </h4>
         {open ? <FaChevronUp /> : <FaChevronDown />}
@@ -19,7 +19,7 @@ const Phase = ({ title, points }) => {
         <ul className="mt-4">
           {points.map((item, idx) => (
             <li key={idx} className="flex items-start mb-3 font-inter text-base">
-              <span className="mt-1 mr-3 text-mint">
+              <span className="mt-1 mr-3 ">
                 <FaCircle />
               </span>
               <span>{item}</span>

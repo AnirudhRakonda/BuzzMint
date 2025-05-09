@@ -22,7 +22,7 @@ const WebDevelopment = () => (
         'Responsive & Mobile Optimization',
       ].map((item, idx) => (
         <li key={idx} className="flex items-start mb-3 text-base">
-          <span className="mt-1 mr-3 text-mint">
+          <span className="mt-1 mr-3 ">
             <FaCircle />
           </span>
           <span>{item}</span>
