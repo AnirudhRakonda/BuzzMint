@@ -67,7 +67,7 @@ const About = () => {
           </p>
           <button
             onClick={handleContactClick}
-            className="mt-8 px-6 py-3 bg-primary text-white rounded-lg font-semibold shadow hover:bg-primary-dark transition"
+            className="mt-8 px-6 py-3 bg-black text-white rounded-lg font-semibold shadow hover:bg-gray-900 transition"
           >
             Contact Us
           </button>
