@@ -19,7 +19,6 @@ const Navbar = () => {
         <div className="text-lg font-bold">
           <span className="text-bright">Buzz</span>
           <span className="text-mint">Mint</span>
-          <span className="text-bright">.</span>
         </div>
         <ul className="flex gap-6 items-center font-inter">
           <li className="cursor-pointer" onClick={() => scrollTo('home')}>home</li>
