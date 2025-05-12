@@ -9,14 +9,13 @@ import Contact from './components/Contact';
 function App() {
   return (
     <>
-    
-    <div className='bg-background p-2'>
-      <Navbar />
-      <Home />
-      <About />
-      <Services />
-      <Contact/>
-    </div>
+      <div className='bg-background p-2' style={{ overflow: 'hidden' }}>
+        <Navbar />
+        <Home />
+        <About />
+        <Services />
+        <Contact/>
+      </div>
       <Footer />
       <Copyright/>
     </>
