@@ -1,30 +1,42 @@
 // src/components/Podcast.jsx
 import React from 'react';
-import { FaCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+const Podcast = () => {
+  const sections = [
+    'Concept and script development',
+    'Guest curation and outreach',
+    'Professional recording and editing',
+    'Publishing and distribution',
+    'Promotion and audience growth',
+  ];
 
-const Podcast = () => (
-  <div className="font-inter">
-    <h4 className="text-2xl font-medium mb-2 text-heading">
-      Every Story Has a Learning Worth Listening To
-    </h4>
-    <p className="text-base text-text mb-6 max-w-2xl">
-      Our podcast uncovers authentic stories of leaders, entrepreneurs, and changemakers. BuzzMint produces powerful episodes that inspire and educate listeners while offering branding and content opportunities.
-    </p>
-    <ul className="mt-2">
-      {[
-        'Business storytelling podcast production',
-        'Guest features & episode hosting',
-        'Branded audio storytelling',
-      ].map((item, idx) => (
-        <li key={idx} className="flex items-start mb-3 text-base">
-          <span className="mt-1 mr-3 ">
-            <FaCircle />
-          </span>
-          <span>{item}</span>
-        </li>
+  return (
+    <div className="font-inter">
+      <h4 className="text-2xl font-medium mb-2 text-heading font-inter">
+        Voice Your Vision – Loud & Clear
+      </h4>
+      <p className="text-base text-text mb-6 max-w-2xl">
+        From ideas to airwaves, we help you launch and scale podcasts that amplify your brand’s voice.
+      </p>
+
+      {sections.map((title, idx) => (
+        <div key={idx} className="mb-6 border-b border-gray-600 pb-4">
+          <h5 className="text-xl font-semibold text-heading">
+            {idx + 1}. {title}
+          </h5>
+        </div>
       ))}
-    </ul>
-  </div>
-);
+      <div className="mt-8 text-right">
+        <Link
+          to="/podcast"
+          className="inline-block bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
+        >
+          Know More &rarr;
+        </Link>
+      </div>
+
+    </div>
+  );
+};
 
 export default Podcast;
