@@ -1,11 +1,14 @@
-import React from 'react';
+import { useEffect } from 'react';
+
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { FiChevronLeft } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 
 const HiringPage = () => {
   const navigate = useNavigate();
-
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* Back Button */}
